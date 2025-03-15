@@ -60,6 +60,7 @@ output "grafana_url" {
 output "kube-bench" {
   value = [
       "Kube-bench is a tool that checks if a Kubernetes deployment follows security best practices as defined by the CIS Kubernetes Benchmark. It automates security audits, providing reports on compliance and remediation guidance",
+       "kubectl logs `kubectl get po  | awk '{print $1}' | tail -n 1 ` >> kube-bench.txt",
       "cat kube-bench.txt"
     ]
 }
