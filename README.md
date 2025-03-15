@@ -13,7 +13,7 @@ sudo yum install git -y
 ### Git repo
 Code git repo
 ```bash
-https://github.com/tyagipurshottam/homework.git
+git clone https://github.com/tyagipurshottam/homework.git
 ```
 ### Install Terraform
 Install Terraform: Download and set up the latest version of Terrafor:
