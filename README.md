@@ -46,11 +46,11 @@ Developer Repository:
 ```
 GitOps Repository:
 ```bash
-git clone https://github.com/tyagipurshottam/homework-dev.git
+git clone https://github.com/tyagipurshottam/argued.git
 ```
 Terraform Repository:
 ```bash
-git clone  https://github.com/tyagipurshottam/homework-dev.git
+git clone https://github.com/tyagipurshottam/homework.git
 ```
 
 # Security Check
