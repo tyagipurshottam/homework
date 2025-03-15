@@ -25,6 +25,10 @@ mkdir -p ~/bin
 mv terraform ~/bin/
 terraform version
 ```
+### Go inside dirctory
+```bash
+cd homework
+```
 ### Apply code through Terraform
 Deploy with Terraform: Use Terraform to provision and deploy the resources on the host
 ```bash
@@ -78,4 +82,9 @@ Below is the architecture diagram illustrating the setup and data flow for this 
     |                                                                                      |
     +---- [Grafana] ----(View Dashboard)----> [User]                                       |
 
+```
+### Delete a resource 
+Delete a terraform resource :
+```bash
+terraform destroy
 ```
