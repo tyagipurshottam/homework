@@ -1,0 +1,37 @@
+architecture: replication
+primary:
+  ## @param primary.name Name of the primary database (eg primary, master, leader, ...)
+  ##
+  name: master
+
+secondary:
+  ## @param secondary.name Name of the secondary database (eg secondary, slave, ...)
+  ##
+  name: slave
+
+#DB accounts(root,user,replicastion user)、password & DB
+auth:
+  rootPassword: "password"
+  createDatabase: true
+  database: "test_db"
+  username: "app"
+  password: "password"
+  replicationUser: replicator
+  replicationPassword: "password"
+  
+primary:
+  service:
+    type: NodePort
+    ports:
+      mysql: 3306
+    nodePorts:
+      mysql: "31006"
+secondary:    
+  service:
+    type: NodePort
+    ports:
+      mysql: 3306
+    nodePorts:
+      mysql: "31005"
+metrics:
+  enabled: true
