@@ -13,7 +13,7 @@ cd /opt/eks
 }
 ```
 
-## Host Machine Setup
+## Machine Setup
 
 ### Install Git
 Update the package manager and install Git on the host:
