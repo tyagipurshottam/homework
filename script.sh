@@ -109,12 +109,3 @@ else
        echo -e "\033[0;32m Unable to start ingress in  minikube\033[0m"
     fi
 
-minikube status
-# terraform_version=$(curl -s https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -r -M '.current_version')
-# curl -O "https://releases.hashicorp.com/terraform/${terraform_version}/terraform_${terraform_version}_linux_amd64.zip"
-# unzip terraform_${terraform_version}_linux_amd64.zip
-# mkdir -p ~/bin
-# mv terraform ~/bin/
-# terraform version
-#kubectl run mysql-client --rm --tty -i --restart='Never' --image  mysql:latest --namespace foo --env MYSQL_ROOT_PASSWORD=password --command -- bash
-# rsync -avz -e "ssh -i /Users/purshottamtyagi/Downloads/11march22024.pem" terraform-day-1-project ec2-user@54.196.128.102:~
