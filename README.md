@@ -2,6 +2,17 @@
 
 To run this project, you’ll need an AWS EC2 instance or a virtual machine with approximately 8 GB of RAM, a 4-core CPU, a Linux operating system, and an internet connection. For this setup, I’ve used an AWS t3.medium instance configured with the default VPC, Amazon Linux AMI (AMI ID: `ami-08b5b3a93ed654d19`), 30 GB of gp3 storage, and a security group allowing ports 22, 7070, 8080, and 9090.
 
+
+## CloudShell Terminal Only - Create a directory to work in
+On the AWS CloudShell terminal, the disk partition where the home directory is, is not large enough to install the required terraform providers, therefore we will create a directory to work in on a partition that does have sufficient space
+```
+{
+sudo mkdir -p /opt/eks
+sudo chown cloudshell-user /opt/eks
+cd /opt/eks
+}
+```
+
 ## Host Machine Setup
 
 ### Install Git
